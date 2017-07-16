@@ -1,5 +1,5 @@
 //
-//  main.swift
+//  Toyota.swift
 //  hirad
 //
 //  Created by Sam on 2017-07-16.
@@ -8,10 +8,9 @@
 
 import Foundation
 
-let nissan = Car.init(with: "Rouge")
-
-nissan.drive()
-
-let toyota = Toyota()
-
-toyota.drive()
+class Toyota: Car {
+    
+    override init() {
+        super.init(with: "Prius")
+    }
+}
